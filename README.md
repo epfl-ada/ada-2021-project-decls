@@ -1,20 +1,18 @@
-# ADA
+# Don’t neglect, let rainbow shining!
 
 ## Abstract
 
-LGBTQ  This topic has been discussed in different media and is reflected in the given Quotebank dataset. The goal of our project is to find out the situation and law of LGBTQ through the analysis of the dataset, thereby predicting what kind of background LGBTQ can be better accepted and recognized by society. Firstly, we recognize the LGBTQ topics using sentence grammar analysis, then we derive the distribution statistics of LGBTQ, with related to other variables such as time, media and speaker background (e.g. gender, nationality, education background), and then analyze the sentimental factor of the quotation related to LGBTQ. The analysis section will then leave space for a more important chapter of our story: whether people's feelings and attitudes towards LGBTQ are related to the quotation time, speaker's country and other information. We can even dig out the relationship between LGBTQ and the economic development of the world. Further, we also want to figure out the reasons behind frequency changes towards LGBTQ topics, such as some important events at that time. This combined effort can help us have a deeper understanding of people's acceptance of LGBTQ under different backgrounds, thus we can make predictions for the future LGBTQ development and give suggestions for constructing a more equal and LGBTQ-friendly world community.
+Do you know there are still 69 UN member States criminalizing consensual same-sex activity? During the Covid-19 pedantic, LGBTQ people are struggling to survive in a world that has become even more unequal and violent. What can we do to change this situation? Well, we believe the answer may lie in the QuoteBank dataset. The LGBTQ topic has been discussed in different media and reflected in the given Quotebank dataset. In this project, we will go through the dataset and try to find out what we can do to help better their situation. Firstly, we recognize the LGBTQ topics using sentence grammar analysis, then we derive the distribution statistics of LGBTQ, with related to other variables such as time, media, and speaker background (e.g. gender, nationality, education background), and then analyze the sentimental factor of the quotations related to LGBTQ. 
 
-
+Moreover, we extract the correlation and causations of other factors and learn how they affect equality in human society and the development of LGBTQ society. Further, we also want to figure out the reasons behind frequency changes towards LGBTQ topics, such as some important events at that time. This will give us a deeper understanding of people's acceptance of LGBTQ under different backgrounds, thus we can make predictions for the future LGBTQ development and give suggestions for constructing a more equal and LGBTQ-friendly world community.
 
 ## Research questions
 
-* How does the frequency of the LGBTQ topic change year after year, and what might be the reason for the change.
-* How do people from different groups (e.g. gender, occupation, etc.) talk about LGBTQ equality problems (positive or negative) Specifically, is there any correlation between a country's situation (citizens' average education level, GDP, GDP per capita) and the attitudes of their people toward this topic.
-* How does the pattern of the distribution of speaker features change over time, and what might be the reason accounting for it. For example, do male people become more and more realized the LGBTQ topic than before?
-* What are the topics that often co-occur with LGBTQ, and the reasons for that co-occurrence. Specifically, consider those topics that co-occur with LGBTQ, does it currently has a positive or negative effect on LGBTQ.
-* How can we improve the situation based on the analysis of the above RQs and existing information of QuoteBank.
-
-
+- How does the frequency of the LGBTQ topic change year after year, and what might be the reason for the change?
+- How do people from different groups (e.g. gender, occupation, etc.) talk about LGBTQ equality problems (positive or negative)? Specifically, is there any correlation between a country's situation (citizens' average education level, GDP, GDP per capita) and the attitudes of their people toward this topic?
+- How does the pattern of the distribution of speaker features change over time, and what might be the reason accounting for it. For example, do male people become more and more realized the LGBTQ topic than before?
+- What are the topics that often co-occur with LGBTQ, and the reasons for that co-occurrence? Specifically, consider those topics that co-occur with LGBTQ, does it currently has a positive or negative effect on LGBTQ.
+- How can we improve the situation based on the analysis of the above RQs and existing information of QuoteBank?
 
 ## Dataset
 
@@ -26,17 +24,15 @@ URL: https://zenodo.org/record/4277311#.YY1yAi00jb0
 
 #### Speaker attributes dataset
 
-These are external sources from Wikipedia for enriching Quotebank data, which contain the information of speakers’ features like gender, age, occupation and etc.
+These are external sources from Wikipedia for enriching Quotebank data, which contain the information of speakers’ features like gender, age, occupation, etc.
 
 URL:https://drive.google.com/drive/folders/1VAFHacZFh0oxSxilgNByb1nlNsqznUf0
 
 #### WBGAPI
 
-WBGAPI provides modern, pythonic access to the World Bank's data API, which differs from other packages for World Bank data in a few respects and in general tries to take full advantage of the World Bank's powerful API while mitigating the impact of some of its ideosyncracies. We will extract the GDP information from this dataset in order to analyze the correlation between country GDP and LGBTQ topic attention.
+WBGAPI provides modern, pythonic access to the World Bank's data API, which differs from other packages for World Bank data in a few respects and general tries to take full advantage of the World Bank's powerful API while mitigating the impact of some of its idiosyncrasies. We will extract the GDP information from this dataset to analyze the correlation between country GDP and LGBTQ topic attention.
 
 URL: https://deepnote.com/@carlos-mendez/PYTHON-Access-World-Bank-data-with-Python-fVexISvfTxO42ZUgyfinzA
-
-
 
 ## Methodology
 
@@ -45,8 +41,6 @@ URL: https://deepnote.com/@carlos-mendez/PYTHON-Access-World-Bank-data-with-Pyth
 - **Correlation analysis** between country GDP and LGBTQ topic attention
 - **Sentiment analysis** based on Google API
 - **Acquiring co-occur topic clusters:** Apply BERT model embeddings and c-TF-IDF algorithm
-
-
 
 ## Proposed timeline
 
@@ -76,34 +70,20 @@ Analyzing speaker’s sentiment toward specific topic based on Google API.
 
 **10/12/2021:**
 
-Coming up with several visualization methods for the results we have already found above, in order to show all the findings to our readers.
+Coming up with several visualization methods for the results we have already found above, to show all the findings to our readers.
 
 **17/12/2021:** 
 
 Preparing reports and final presentation of our data story.
 
-
-
 ## Organization within the team
-**Duo Xu:** 
-1.Quotebank dataset overall analysis (analyze quotation frequency distribution related to topics, time, speakers, medias).
-2.Exploring if Google API could work for sentiment analysis
-3.Analyzing speaker’s sentiment toward specific topic based on Google API.
 
-**Guosheng Feng:** 
-1.Build LGBTQ quotation dataset based on BERT topic extraction model
-2.Exploring if BERT model embeddings and c-TF-IDF algorithm could work for further work.
-3.Applying BERT model embeddings and c-TF-IDF algorithm to get co-occur topic clusters.
+**Duo Xu:** 1.Quotebank dataset overall analysis (analyze quotation frequency distribution related to topics, time, speakers, media). 2. Exploring if Google API could work for sentiment analysis 3. Analyzing speaker’s sentiment toward specific topic based on Google API.
 
-**Aibin Yu:** 
-1.Building and preprocessing LGBTQ speakers features dataset
-2.Exploring if WBGAPI dataset could work for further work.
-3.Analyzing the correlation between country GDP and LGBTQ topic attention based on the WBGAPI dataset and Quotebank dataset.
+**Guosheng Feng:** 1. Build LGBTQ quotation dataset based on BERT topic extraction model 2. Exploring if BERT model embeddings and c-TF-IDF algorithm could work for further work. 3. Applying BERT model embeddings and c-TF-IDF algorithm to get co-occur topic clusters.
 
-**Yifeng Chen:** 
-1.Quotebank dataset preprocessing
-2.Writing the proposal of milestone2.
-3.Using causation analysis to figure out the causality between some big events and the variation of LGBTQ topic attention.
+**Aibin Yu:** 1. Building and preprocessing LGBTQ speakers feature dataset 2. Exploring if the WBGAPI dataset could work for further work. 3. Analyzing the correlation between country GDP and LGBTQ topic attention based on the WBGAPI dataset and Quotebank dataset.
 
-We will use visualization methods to present our final work, prepare reports and presentation.
+**Yifeng Chen:** 1. Quotebank dataset preprocessing 2. Writing the proposal of milestone2. 3. Using causation analysis to figure out the causality between some big events and the variation of LGBTQ topic attention.
 
+We will use visualization methods to present our final work, prepare reports and presentations.

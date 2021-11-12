@@ -78,12 +78,29 @@ Preparing reports and final presentation of our data story.
 
 ## Organization within the team
 
-**Duo Xu:** 1.Quotebank dataset overall analysis (analyze quotation frequency distribution related to topics, time, speakers, media). 2. Exploring if Google API could work for sentiment analysis 3. Analyzing speaker’s sentiment toward specific topic based on Google API.
+**Duo Xu:** 
 
-**Guosheng Feng:** 1. Build LGBTQ quotation dataset based on BERT topic extraction model 2. Exploring if BERT model embeddings and c-TF-IDF algorithm could work for further work. 3. Applying BERT model embeddings and c-TF-IDF algorithm to get co-occur topic clusters.
+-  Quotebank dataset overall analysis (analyze quotation frequency distribution related to topics, time, speakers, media). 
+- Exploring if Google API could work for sentiment analysis 
+- Analyzing speaker’s sentiment toward specific topic based on Google API.
 
-**Aibin Yu:** 1. Building and preprocessing LGBTQ speakers feature dataset 2. Exploring if the WBGAPI dataset could work for further work. 3. Analyzing the correlation between country GDP and LGBTQ topic attention based on the WBGAPI dataset and Quotebank dataset.
+**Guosheng Feng:** 
 
-**Yifeng Chen:** 1. Quotebank dataset preprocessing 2. Writing the proposal of milestone2. 3. Using causation analysis to figure out the causality between some big events and the variation of LGBTQ topic attention.
+- Build LGBTQ quotation dataset based on BERT topic extraction model 
+- Exploring if BERT model embeddings and c-TF-IDF algorithm could work for further work. 
+- Applying BERT model embeddings and c-TF-IDF algorithm to get co-occur topic clusters.
 
-We will use visualization methods to present our final work, prepare reports and presentations.
+**Aibin Yu:** 
+
+- Building and preprocessing LGBTQ speakers feature dataset 
+- Exploring if the WBGAPI dataset could work for further work. 
+-  Analyzing the correlation between country GDP and LGBTQ topic attention based on the WBGAPI dataset and Quotebank dataset.
+
+**Yifeng Chen:** 
+
+- Quotebank dataset preprocessing 
+- Writing the proposal of milestone2. 
+- Using causation analysis to figure out the causality between some big events and the variation of LGBTQ topic attention.
+
+**We will use visualization methods to present our final work, prepare reports and presentations.**
+

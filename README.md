@@ -10,8 +10,7 @@ Moreover, we extract the correlation and causations of other factors and learn h
 
 - How does the frequency of the LGBTQ topic change year after year, and what might be the reason for the change?
 - How do people from different groups (e.g. gender, occupation, etc.) talk about LGBTQ equality problems (positive or negative)? Specifically, is there any correlation between a country's situation (citizens' average education level, GDP, GDP per capita) and the attitudes of their people toward this topic?
-- How does the pattern of the distribution of speaker features change over time, and what might be the reason accounting for it. For example, do male people become more and more realized the LGBTQ topic than before?
-- What are the topics that often co-occur with LGBTQ, and the reasons for that co-occurrence? Specifically, consider those topics that co-occur with LGBTQ, does it currently has a positive or negative effect on LGBTQ.
+- How does the emotion pattern of the distribution of speaker features change over time, and what might be the reason accounting for it. For example, do male people become more and more postive toward the LGBTQ topic than before?
 - How can we improve the situation based on the analysis of the above RQs and existing information of QuoteBank?
 
 ## Dataset
@@ -42,10 +41,17 @@ URL:https://drive.google.com/drive/folders/1VAFHacZFh0oxSxilgNByb1nlNsqznUf0
 ## Methodology
 
 - **Statistics analysis**: analyze quotation frequency distribution related to topics, time, speakers, media
-- **Causation analysis:** figure out the causality between some big events and the variation of LGBTQ topic attention.
-- **Correlation analysis** between country GDP and LGBTQ topic attention
-- **Sentiment analysis** based on Google API
-- **Acquiring co-occur topic clusters:** Apply BERT model embeddings and c-TF-IDF algorithm
+- **Correlation analysis** First, we conduct the regression analysis for different regions in the world, and choose the independent variable to be GDP per-capita instead of overall GDP score,Second, we explore the relationship between the education level and acceptance of LGBTQ, we conduct the regression analysis between the education ratio for population over 25 years old and the LGBTQ accenptance score.
+- **Sentiment analysis** After acquiring the speakers with their corresponding features, we will need some sentimental analysis tools to check the speakers' attitudes towards LGBTQ. For this part we will use google cloud's natural language api. The analyze_sentiment function will return a score and a magnitude for the given quotation. Then we divide the emotion of each quotation into 4 groups(positive, negative, mixture, neutral). First, we analyze the total emotion distribution of the whole quotebank dataset related to LGBTQ topic. Next, we use different features to divide people into several groups, for example, if we choose the feature as age, there are 3 groups: young(born after 1990), middle of age(born in 1960-1989), old(born before 1959), then we analyze the distribution of each group.
+- **Acquiring co-occur topic clusters:** 
+- Here we analyze the topics that co-occur with LGBTQ.
+
+Instead of what we have done in the frequent topic extraction phase, here we want to be more precise and convincing about the topics that we extracted. Further, we want give more reasoning to them, and one way for doing this is to use topic aggregations. Here we directly apply the intergrated API as **BERT-Topic**, whose method scheme is as follows:
+
+1. Gather LGBTQ quotations as one document (lists of quotations)
+2. Performing text embedding using Transformer language models (with pretrained weight loaded)
+3. Apply aggregation algorithm to text embeddings using UMAP (for dimension reduction) and HDBSAN (for clustering) algorithm
+4. extract topics using class-based TF-IDF algorithm
 
 ## Proposed timeline
 
@@ -105,7 +111,7 @@ Preparing reports and final presentation of our data story.
 
 - Quotebank dataset preprocessing 
 - Writing the proposal of milestone2. 
-- Using causation analysis to figure out the causality between some big events and the variation of LGBTQ topic attention.
+-
 
-**We will use visualization methods to present our final work, prepare reports and presentations.**
+**We will use visualization methods to present our final work, prepare websites.**
 

@@ -44,14 +44,14 @@ URL:https://drive.google.com/drive/folders/1VAFHacZFh0oxSxilgNByb1nlNsqznUf0
 - **Correlation analysis** First, we conduct the regression analysis for different regions in the world, and choose the independent variable to be GDP per-capita instead of overall GDP score,Second, we explore the relationship between the education level and acceptance of LGBTQ, we conduct the regression analysis between the education ratio for population over 25 years old and the LGBTQ accenptance score.
 - **Sentiment analysis** After acquiring the speakers with their corresponding features, we will need some sentimental analysis tools to check the speakers' attitudes towards LGBTQ. For this part we will use google cloud's natural language api. The analyze_sentiment function will return a score and a magnitude for the given quotation. Then we divide the emotion of each quotation into 4 groups(positive, negative, mixture, neutral). First, we analyze the total emotion distribution of the whole quotebank dataset related to LGBTQ topic. Next, we use different features to divide people into several groups, for example, if we choose the feature as age, there are 3 groups: young(born after 1990), middle of age(born in 1960-1989), old(born before 1959), then we analyze the distribution of each group.
 - **Acquiring co-occur topic clusters:** 
-- Here we analyze the topics that co-occur with LGBTQ.
+  Here we analyze the topics that co-occur with LGBTQ.
 
-Instead of what we have done in the frequent topic extraction phase, here we want to be more precise and convincing about the topics that we extracted. Further, we want give more reasoning to them, and one way for doing this is to use topic aggregations. Here we directly apply the intergrated API as **BERT-Topic**, whose method scheme is as follows:
+  Instead of what we have done in the frequent topic extraction phase, here we want to be more precise and convincing about the topics that we extracted. Further, we want give more reasoning to them, and one way for doing this is to use topic aggregations. Here we directly apply the intergrated API as **BERT-Topic**, whose method scheme is as follows:
 
-1. Gather LGBTQ quotations as one document (lists of quotations)
-2. Performing text embedding using Transformer language models (with pretrained weight loaded)
-3. Apply aggregation algorithm to text embeddings using UMAP (for dimension reduction) and HDBSAN (for clustering) algorithm
-4. extract topics using class-based TF-IDF algorithm
+  1. Gather LGBTQ quotations as one document (lists of quotations)
+  2. Performing text embedding using Transformer language models (with pretrained weight loaded)
+  3. Apply aggregation algorithm to text embeddings using UMAP (for dimension reduction) and HDBSAN (for clustering) algorithm
+  4. extract topics using class-based TF-IDF algorithm
 
 ## Proposed timeline
 

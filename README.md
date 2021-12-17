@@ -28,12 +28,17 @@ These are external sources from Wikipedia for enriching Quotebank data, which co
 
 URL:https://drive.google.com/drive/folders/1VAFHacZFh0oxSxilgNByb1nlNsqznUf0
 
-#### WBGAPI
+#### [**WorldBank**](https://data.worldbank.org/):
 
-WBGAPI provides modern, pythonic access to the World Bank's data API, which differs from other packages for World Bank data in a few respects and general tries to take full advantage of the World Bank's powerful API while mitigating the impact of some of its idiosyncrasies. We will extract the GDP information from this dataset to analyze the correlation between country GDP and LGBTQ topic attention.
+  WorldBank data contains various of statistical data from different countries and regions over the world, such as economy, education, employment, environment and population. This dataset maintains a number of macro, financial and sector databases where much of the them comes from the statistical systems of [member countries](http://www.worldbank.org/en/about/leadership/members).
 
-URL: https://deepnote.com/@carlos-mendez/PYTHON-Access-World-Bank-data-with-Python-fVexISvfTxO42ZUgyfinzA
+  We mainly use worldbank data for analyzing the factors that lead to different acceptance levels towards LGBTQ community of different countries and regions.
 
+#### [**Sexual Orientation Laws in the World**](https://www.kaggle.com/mpwolke/cusersmarildownloadsomophobiacsv):
+
+  This dataset maintains different LGBTQ-related national policies of different countries, such as same-sex marriage, conversion therapy, penalty, adoption & fostering and employment protection of LGBTQ people. The data mainly from ILGA World along with the State-Sponsored Homophobia report.
+
+  We use this dataset for evaluating LGBTQ acceptance levels of different countries. By quantifying the policies into scores, we combine it with the WorldBank dataset for regression analysis of different factors.
 ## Methodology
 
 - **Statistics analysis**: analyze quotation frequency distribution related to topics, time, speakers, media

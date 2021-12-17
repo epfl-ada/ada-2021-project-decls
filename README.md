@@ -74,7 +74,7 @@ Analyzing the correlation between country GDP/education level and LGBTQ topic at
 
 **26/11/2021:** 
 
-(network)
+Using pre-defined key-words (based on Wikipedia) and Part-of-speech tagging to quickly scan over the whole QuoteBank dataset to fetch all the LGBTQ-related quotations. Then we store these quotations for further analysis.
 
 **03/12/2021:** 
 
@@ -101,7 +101,7 @@ Preparing reports and final presentation of our data story.
 
 - Build LGBTQ quotation dataset based on BERT topic extraction model  
 - Applying BERT model embeddings and c-TF-IDF algorithm to get co-occur topic clusters.
-- (Network)
+- Using pre-defined key-words (based on Wikipedia) and Part-of-speech tagging to quickly scan over the whole QuoteBank dataset to fetch all the LGBTQ-related quotations. Then we store these quotations for further analysis.
 
 **Aibin Yu:** 
 

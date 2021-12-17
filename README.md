@@ -1,5 +1,6 @@
 # Don’t neglect, let rainbow shining!
-
+This is our data story
+URL:https://edwin628.github.io/
 ## Abstract
 
 Do you know there are still 69 UN member States criminalizing consensual same-sex activity? During the Covid-19 pandemic, LGBTQ people are struggling to survive in a world that has become even more unequal and violent. What can we do to change this situation? Well, we believe the answer may lie in the QuoteBank dataset. The LGBTQ topic has been discussed in different media and reflected in the given Quotebank dataset. In this project, we will go through the dataset and try to find out what we can do to help better their situation. Firstly, we recognize the LGBTQ topics using sentence grammar analysis, then we derive the distribution statistics of LGBTQ, with related to other variables such as time, media, and speaker background (e.g. gender, nationality, education background), and then analyze the sentimental factor of the quotations related to LGBTQ. 
@@ -85,6 +86,7 @@ Coming up with several visualization methods for the results we have already fou
 **17/12/2021:** 
 
 Preparing reports and final presentation of our data story.
+## Instruction of our code
 
 ## Contribution of each member
 
